@@ -1,3 +1,9 @@
+// b2 branch changes
+2
+4
+6
+8
+// main branch changes
 b1
 b1
 b1
@@ -6,3 +12,4 @@ b1
 b1
 
 main
+// keep both
