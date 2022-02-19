@@ -28,3 +28,15 @@ git diff --name-only  bl1 origin/main
 
 //CMD:to try: reset branch to remote tracking branch
 git reset --hard <remote>/<branch>
+                -----------     
+//CMD: --------/-----------
+//CMD: to rebase the branch to main
+                           ------------
+//CMD: -------------------/ 
+git switch branch
+git switch main
+git rebase main
+//CMD: to resolve conflicts if any.
+git rebase --continue
+//CMD: to skip a merge
+git rebase --skip
