@@ -24,3 +24,7 @@ git diff main origin/main
 git diff bl1 origin/main
 //CMD: diff between branch b1 and remote main, but list only files//  
 git diff --name-only  bl1 origin/main
+
+
+//CMD:to try: reset branch to remote tracking branch
+git reset --hard <remote>/<branch>
