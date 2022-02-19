@@ -1,0 +1,26 @@
+//CMD:create branch//  
+git branch f1
+//CMD:create branch //  
+git branch f2
+//CMD:delete branch // 
+git branch -d f1
+//CMD:commit to local repo // 
+git commit -m "added 2"
+//CMD:switch branch//  
+git switch b1
+//CMD:Imp push branch in remote repo, and create a tracking branch in local repo// 
+git push -u origin b1
+//CMD: push with verbose and do dry run, don't actually push//  
+git push --verbose --dry_run 
+//CMD: merge branch into main, need to be in main to execute it // 
+git merge b2
+//CMD: if merge has conflict, abort it//
+git merge --abort
+//CMD: if there is a merge conflict, use this to see the merge conflict//  
+git mergetool
+//CMD: see diff using p4merge// 
+git diff main origin/main
+//CMD: diff between branch bl1 and remote main//  
+git diff bl1 origin/main
+//CMD: diff between branch b1 and remote main, but list only files//  
+git diff --name-only  bl1 origin/main
